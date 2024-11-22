@@ -3,75 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Gana un premio!</title>
+    <title>Pregunta</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #fef9c3;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            margin-top: 10%;
-        }
-        h1 {
-            color: #fa541c;
-            font-size: 36px;
-        }
-        p {
-            color: #333;
-            font-size: 18px;
+            margin-top: 20%;
+            background-color: #f9f9f9;
         }
         button {
-            background-color: #198754;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
+            background-color: #4caf50;
+            color: white;
         }
         button:hover {
-            background-color: #145a32;
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>¡Felicidades!</h1>
-        <p>Haz clic en el botón y gana un increíble premio.</p>
-        <button onclick="reproducirAudio()">Haz clic aquí</button>
-
-        <!-- Archivos de audio múltiples para saturar el sonido -->
-        <audio id="trollAudio1">
-            <source src="gemidos.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="trollAudio2">
-            <source src="gemidos.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="trollAudio3">
-            <source src="gemidos.mp3" type="audio/mpeg">
-        </audio>
-
-        <!-- Script para controlar el audio -->
-        <script>
-            function reproducirAudio() {
-                const audio1 = document.getElementById('trollAudio1');
-                const audio2 = document.getElementById('trollAudio2');
-                const audio3 = document.getElementById('trollAudio3');
-
-                // Reproduce varios sonidos al mismo tiempo
-                audio1.volume = 1.0; // Volumen máximo
-                audio2.volume = 1.0;
-                audio3.volume = 1.0;
-
-                audio1.play().catch(error => console.log('Error al reproducir el audio:', error));
-                audio2.play().catch(error => console.log('Error al reproducir el audio:', error));
-                audio3.play().catch(error => console.log('Error al reproducir el audio:', error));
-            }
-        </script>
-    </div>
+    <h1>Delfina Almeida, ¿soy lindo?</h1>
+    <button onclick="alert('¡Sabía que dirías que sí! 😊')">Sí</button>
+    <button onclick="alert('¡Gracias por tu sinceridad! 😊')">Sí</button>
 </body>
 </html>
